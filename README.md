@@ -1,4 +1,4 @@
-# 🧠 ForgeLab — The Self-Healing AI Development Environment
+# 🧠 ForgeLab — The multi-agent AI development environment
 
 > **Write what you want. It builds, tests, and fixes itself automatically.**
 
