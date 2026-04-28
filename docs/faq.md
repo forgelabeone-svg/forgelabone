@@ -6,7 +6,10 @@
 A: ForgeLab has a unique **self-healing Audit Loop** that automatically finds and fixes errors. Other tools generate code and leave you to debug it manually. We also use a multi-agent system (5 specialized AI agents) instead of a single AI response.
 
 **Q: Is it free?**  
-A: Yes, with free tier limitations. You can also **Bring Your Own Key (BYOK)** — add your OpenRouter API key and pay only what OpenRouter charges.
+A: There are three tiers:
+- **Free** — ForgeLab's API with free models only. Brain Mode, Audit Loop, and other advanced features are not available.
+- **Pro** — no monthly fee, purchase ForgeLab tokens and use them as you go. Full access to all features and models, with higher queue priority.
+- **BYOK** — $6.99/month platform fee (7-day free trial), bring your own OpenRouter API key. Full access to all features.
 
 **Q: What tech stacks are supported?**  
 A: React, Next.js, Vue, Svelte, Node.js/Express, Python/FastAPI, static HTML/CSS/JS, and more.
@@ -33,7 +36,7 @@ A: Currently ~85-90% of issues are fixed automatically. For the remaining edge c
 ## Privacy & Security
 
 **Q: Is my code stored?**  
-A: Projects are ephemeral. Files exist only in your browser session. Deployed projects are hosted on Cloudflare Pages.
+A: Yes — your projects are saved to a database and accessible from your account. Deployed projects are hosted on Cloudflare Pages.
 
 **Q: Can I use my own API key?**  
 A: Yes! Add your OpenRouter API key in Settings. You'll only pay OpenRouter's usage pricing.

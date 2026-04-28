@@ -50,7 +50,27 @@ Templates give the AI a head start with the right tech stack. Pick one that matc
 - **Be specific** — "A dark-themed admin dashboard with user management, revenue charts, and a settings page" works better than "admin panel"
 - **Use templates** — They save time and reduce errors
 - **Let the Audit Loop work** — If the preview shows an error, wait. The system fixes itself automatically.
-- **Bring your own key** — Add your OpenRouter API key in Settings for unlimited usage at cost price
+- **Bring your own key** — BYOK mode ($6.99/mo, 7-day free trial) lets you use your own OpenRouter API key at cost price. Or go Pro and purchase ForgeLab tokens with no monthly commitment.
+
+## 🛡️ Audit Loop — Standalone Feature
+
+The Audit Loop is not just part of Brain Mode — it's an independent feature you can run on any project, including existing ones.
+
+**To run the Audit Loop on an existing project:**
+
+1. Upload your project files into the VFS (Virtual File System)
+2. Enable the **Audit Loop** toggle
+3. A progress card appears and walks you through each step automatically:
+   - Build check
+   - Cross validation
+   - ESLint
+   - TypeScript check
+   - Runtime verification
+4. Any issues found are fixed automatically, then re-checked
+
+This is useful for auditing and fixing projects that weren't built in ForgeLab, or for re-running a fix pass on an older project.
+
+---
 
 ## Need Help?
 
