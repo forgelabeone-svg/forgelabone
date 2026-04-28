@@ -74,5 +74,5 @@ This is useful for auditing and fixing projects that weren't built in ForgeLab, 
 
 ## Need Help?
 
-- Watch the [demo video](https://youtu.be/Ce-2hYqLku4)
+- Watch the [demo video](https://youtu.be/Ce-2hYqLku4) *(recorded before the Audit Loop feature — updated video coming soon)*
 - Visit [forgelab.one](https://forgelab.one) to try it live
