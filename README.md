@@ -1,5 +1,3 @@
-
-```markdown
 # 🧠 ForgeLab — The Self-Healing AI Development Environment
 
 > **Write what you want. It builds, tests, and fixes itself automatically.**
@@ -32,25 +30,24 @@ ForgeLab is a browser-based, multi-agent AI development environment powered by *
 ForgeLab uses a proprietary **Brain Mode** system with 5 specialized AI agents:
 
 ```
-
 User Prompt
 │
 ▼
 ┌─────────────────┐
 │   🧠 Conductor   │ ← Orchestrates the entire workflow
 └────────┬────────┘
-│
-▼
+         │
+         ▼
 ┌─────────────────┐
 │   📐 Architect   │ ← Plans project structure & file breakdown
 └────────┬────────┘
-│
-▼
+         │
+         ▼
 ┌─────────────────┐
 │  💻 Senior Dev   │ ← Writes code (4–5 agents in parallel)
 └────────┬────────┘
-│
-▼
+         │
+         ▼
 ┌─────────────────────────────┐
 │  🛡️ AUDIT LOOP              │
 │  ┌───────────────────────┐  │
@@ -70,12 +67,11 @@ User Prompt
 │              │              │
 │              NO ──▶ Repeat  │
 └─────────────────────────────┘
-│
-▼
+         │
+         ▼
 ┌─────────────────┐
 │   🌐 Deploy      │ ← One-click Cloudflare Pages
 └─────────────────┘
-
 ```
 
 ---
@@ -141,6 +137,3 @@ This repository contains documentation and public assets. The ForgeLab engine is
 - **Website:** [forgelab.one](https://forgelab.one)
 - **Demo:** [forgelabtest.one](https://forgelabtest.one)
 - **YouTube:** [Demo Video](https://youtu.be/Ce-2hYqLku4)
-```
-
----
