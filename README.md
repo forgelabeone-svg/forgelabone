@@ -21,7 +21,7 @@ ForgeLab is a browser-based, multi-agent AI development environment powered by *
 
 ## 🎥 Demo
 
-[Watch on YouTube](https://youtu.be/Ce-2hYqLku4)
+[Watch on YouTube](https://youtu.be/Ce-2hYqLku4) *(recorded before the Audit Loop feature — updated video coming soon)*
 
 ---
 
