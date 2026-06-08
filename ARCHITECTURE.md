@@ -16,8 +16,8 @@ The Brain is the central orchestrator that manages the entire project generation
 
 | Agent | Role | Model Recommendation |
 |-------|------|---------------------|
-| 🚦 **Conductor** | Orchestrates workflow, decides next actions | Fast/cheap model |
-| 📐 **Architect** | Plans project structure, file breakdown, task assignment | Fast/cheap model |
+| 🚦 **Conductor** | Orchestrates workflow, decides next actions | Fast/capable model |
+| 📐 **Architect** | Plans project structure, file breakdown, task assignment | Strong instruction-following model |
 | 💻 **Senior Dev** | Writes production code (4–5 in parallel) | Best available model |
 | 🐛 **Bug Hunter Fast** | Quick pre-scan for obvious errors | Fast/cheap model |
 | 🐛 **Bug Hunter Deep** | Complex debugging and integration fixes | Strong reasoning model |
@@ -139,6 +139,16 @@ Every AI modification is snapshotted before changes are applied:
 
 ---
 
+### 6. Long-Term User Memory
+
+ForgeLab remembers persistent facts about each user across sessions:
+
+- Saved via `[[MEMORY: fact | CATEGORY: personal]]` tags in AI responses
+- Injected at the start of every new conversation's system prompt
+- Stored per-user in the database, never shared between accounts
+
+---
+
 ## Technical Stack
 
 ### Browser-Side
@@ -148,13 +158,13 @@ Every AI modification is snapshotted before changes are applied:
 - **xterm.js** — Multi-tab terminal emulator
 
 ### AI Integration
-- **OpenRouter** — Unified API for 19+ AI models
-- **Streaming (SSE)** — Real-time code generation display
-- **Sync API** — Server-validated non-streaming mode for Brain tasks
+- **OpenRouter** — Unified API for 15+ AI models
+- **Streaming (SSE)** — Real-time code generation via Server-Sent Events
+- **Local Model Support** — Optional Ollama backend (BYOK users)
 
 ### Backend
 - **PHP** — Authentication, database, session management
-- **Node.js** — SSE streaming endpoint
+- **Node.js** — SSE streaming endpoint, preflight validation
 - **Supabase** — Conversation storage, Brain Memory, user data
 - **Cloudflare Pages** — One-click project deployment
 
@@ -164,5 +174,6 @@ Every AI modification is snapshotted before changes are applied:
 
 - **BYOK (Bring Your Own Key)** — Users can use their own OpenRouter API key
 - **Session-based authentication** — PHP sessions with Supabase integration
-- **API key encryption** — Keys stored encrypted at rest
-- **No code storage** — Generated projects are ephemeral (unless deployed)
+- **API key encryption** — AES-256-CBC, keys stored encrypted at rest, never logged
+- **Project storage** — Generated files are saved per-user and accessible only from their account
+- **Internal API protection** — Brain preflight endpoint restricted to localhost only (nginx + shared secret)

@@ -21,7 +21,7 @@ ForgeLab is a browser-based, multi-agent AI development environment powered by *
 
 ## 🎥 Demo
 
-[Watch on YouTube](https://youtu.be/Ce-2hYqLku4) *(recorded before the Audit Loop feature — updated video coming soon)*
+[Watch on YouTube](https://youtu.be/Ce-2hYqLku4)
 
 ---
 
@@ -82,7 +82,7 @@ Real usage data via OpenRouter:
 
 - **104M+** Tokens processed
 - **12K+** AI requests
-- **19** AI models supported
+- **15** AI models supported
 - **13** Project templates
 
 ---
@@ -100,7 +100,7 @@ Real usage data via OpenRouter:
 ## 🔧 Tech Stack
 
 - **Frontend:** Vanilla JS, WebContainer API, Monaco Editor, xterm.js
-- **AI:** OpenRouter (Claude, GPT, Gemini, Grok, DeepSeek, and 19+ models)
+- **AI:** OpenRouter (Claude, GPT, Gemini, Grok, DeepSeek, and 15+ models)
 - **Backend:** PHP (auth/DB), Node.js (streaming)
 - **Build:** WebContainer (in-browser Node.js), Judge0 (Python/Java/etc.)
 - **Deploy:** Cloudflare Pages
@@ -128,12 +128,11 @@ Real usage data via OpenRouter:
 
 ## 📄 License
 
-This repository contains documentation and public assets. The ForgeLab engine is proprietary software.
+This repository contains documentation and public assets. The ForgeLab engine is proprietary software — see [LICENSE](LICENSE).
 
 ---
 
 ## 🔗 Links
 
 - **Website:** [forgelab.one](https://forgelab.one)
-- **Demo:** [forgelabtest.one](https://forgelabtest.one)
 - **YouTube:** [Demo Video](https://youtu.be/Ce-2hYqLku4)

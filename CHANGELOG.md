@@ -1,6 +1,43 @@
 # 📝 Changelog
 
-## v8.1 (Current) — April 2026
+## v8.3 (Current) — June 2026
+
+### New Features
+- 🖥️ **Local Model Support** — Connect your own Ollama instance as the AI backend (BYOK users)
+- 🔒 **BYOK Subscription System** — Stripe integration, 7-day free trial, active subscription enforcement across all endpoints
+- 🧠 **Memory Priority for Local Models** — Memory context is prepended to the system prompt for better adherence by smaller models
+- 🌟 **New Models** — Added Claude Opus 4.8, Minimax M3, Qwen 3.7 Max
+- 📢 **Announcement Bar** — HTML-rendered system announcements
+- ⚙️ **Closed Beta Mode** — Feature flag to disable token purchases during closed beta
+
+### Improvements
+- ⚡ Brain agent model tuning: Senior Dev → Claude Sonnet 4.6 for better instruction adherence
+- 💰 Bug Hunter → DeepSeek V4 Pro (equivalent quality, lower cost)
+- 🌍 Chat history dates now always display in English regardless of browser locale
+- 📋 Onboarding wizard: added "Model Quality Matters" slide to set expectations
+
+### Bug Fixes
+- Fixed trial duration inconsistency (was showing 30 days in some places, 7 days in others)
+- Fixed Brain Mode disable state when local model is active
+
+---
+
+## v8.2 — May 2026
+
+### New Features
+- 🚀 **Closed Beta Launch** — Invited user access
+- 💳 **Stripe Live Mode** — BYOK subscription payments in production
+- 🧩 **Component Contract System** — Architect defines prop interfaces shared across all parallel Senior Dev agents
+- 📋 **10-slide Onboarding Wizard** — Full product walkthrough for new users
+
+### Improvements
+- Brain Mode disabled (grayed out) when local model is active
+- Per-file generation mode as default (more reliable than batch)
+- BYOK trial enforcement added to all API endpoints
+
+---
+
+## v8.1 — April 2026
 
 ### New Features
 - 🧠 Brain Memory in every task execution
@@ -17,6 +54,8 @@
 - Fixed duplicate BrowserRouter injection
 - Fixed circular @apply detection in CSS
 
+---
+
 ## v8.0 — March 2026
 
 ### New Features
@@ -31,6 +70,8 @@
 - Fixed loading screen timing
 - Fixed file corruption protection
 
+---
+
 ## v7.1 — February 2026
 
 ### New Features
@@ -39,6 +80,8 @@
 - 🔒 File corruption protection
 - ⏱️ Timeout synchronization
 
+---
+
 ## v7.0 — January 2026
 
 ### New Features
@@ -46,6 +89,8 @@
 - 🔄 Conductor-based workflow
 - 📋 Task queue with parallel execution
 - 🐛 Bug Hunter agents
+
+---
 
 ## v1.0 — December 2025
 

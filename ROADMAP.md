@@ -2,7 +2,9 @@
 
 ## Q2 2026 — Current Focus
 
-- [ ] **Closed Beta** — 20–30 invited users
+- [x] **Closed Beta** — 20–30 invited users *(launched June 12, 2026)*
+- [x] **BYOK Subscription** — Stripe integration, 7-day free trial
+- [x] **Local Model Support** — Ollama backend for BYOK users
 - [ ] **Audit Loop Silent Mode** — Hide fix details, show progress card
 - [ ] **Differential Re-Audit** — Only re-check changed files (token cost -50%)
 - [ ] **Smart Model Routing** — Auto-select cheapest capable model per task
