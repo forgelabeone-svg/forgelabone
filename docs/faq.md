@@ -25,6 +25,9 @@ A: Small projects (3-5 files): ~2 minutes. Medium projects (8-12 files): ~4 minu
 **Q: Can I stop it mid-way?**  
 A: Yes, click the Stop button anytime. You'll keep all files generated so far.
 
+**Q: Does model choice affect quality?**  
+A: Yes, significantly. Cheaper or smaller models may not follow complex formatting rules as reliably, which can result in incomplete or incorrectly structured files. For Brain Mode, a stronger model (like Claude Sonnet or GPT-4 class) is recommended for the Senior Dev agent. You can configure per-agent models in Settings → Brain Mode Config.
+
 ## Audit Loop
 
 **Q: What is the Audit Loop?**  
@@ -36,10 +39,13 @@ A: Currently ~85-90% of issues are fixed automatically. For the remaining edge c
 ## Privacy & Security
 
 **Q: Is my code stored?**  
-A: Yes — your projects are saved to a database and accessible from your account. Deployed projects are hosted on Cloudflare Pages.
+A: Yes — your generated projects are saved to your account and accessible from your conversation history. Only you can see your projects. Deployed projects are hosted on Cloudflare Pages under a public URL you control.
 
 **Q: Can I use my own API key?**  
-A: Yes! Add your OpenRouter API key in Settings. You'll only pay OpenRouter's usage pricing.
+A: Yes! Add your OpenRouter API key in Settings. You'll only pay OpenRouter's usage pricing, plus the $7.99/month BYOK platform fee (7-day free trial included).
+
+**Q: How is my API key stored?**  
+A: Your API key is encrypted with AES-256-CBC before being stored. It is never logged or transmitted in plain text.
 
 ## Technical
 
@@ -48,3 +54,6 @@ A: We use WebContainer API, which runs a real Node.js environment directly in yo
 
 **Q: What about Python projects?**  
 A: Python and other non-JavaScript languages run via Judge0, a cloud-based code execution service.
+
+**Q: Can I use a local AI model?**  
+A: Yes — BYOK users can connect their own Ollama instance in Settings → Local Model. Note that smaller local models may produce lower quality results than cloud models, especially in Brain Mode.

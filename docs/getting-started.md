@@ -50,6 +50,7 @@ Templates give the AI a head start with the right tech stack. Pick one that matc
 - **Be specific** — "A dark-themed admin dashboard with user management, revenue charts, and a settings page" works better than "admin panel"
 - **Use templates** — They save time and reduce errors
 - **Let the Audit Loop work** — If the preview shows an error, wait. The system fixes itself automatically.
+- **Choose a strong model** — In Brain Mode, the Senior Dev agent benefits most from a capable model (Claude Sonnet or equivalent). Cheaper models may produce incomplete code.
 - **Bring your own key** — BYOK mode ($7.99/mo, 7-day free trial) lets you use your own OpenRouter API key at cost price. Or go Pro and purchase ForgeLab tokens with no monthly commitment.
 
 ## 🛡️ Audit Loop — Standalone Feature
@@ -74,5 +75,6 @@ This is useful for auditing and fixing projects that weren't built in ForgeLab, 
 
 ## Need Help?
 
-- Watch the [demo video](https://youtu.be/Ce-2hYqLku4) *(recorded before the Audit Loop feature — updated video coming soon)*
+- Watch the [demo video](https://youtu.be/Ce-2hYqLku4)
 - Visit [forgelab.one](https://forgelab.one) to try it live
+- Browse the [FAQ](faq.md) for common questions
