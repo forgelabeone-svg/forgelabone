@@ -149,6 +149,19 @@ ForgeLab remembers persistent facts about each user across sessions:
 
 ---
 
+### 7. Real Backend Provisioning (Supabase)
+
+Connecting a Supabase project to a generation lets ForgeLab give the generated app a real backend instead of mock data:
+
+- **Schema detection** — the data model your app needs is inferred from your request and the generated code, then the matching tables are provisioned with one click
+- **Row-level security by default** — every provisioned table gets RLS policies scoped to `user_id`, generated automatically alongside the schema
+- **Real client wiring** — React, Vue, and Svelte projects are generated with real Supabase client calls and real Supabase Auth instead of mock data
+- **Next.js: static export vs. full backend** — a project-level choice between a client-side-auth static export (stays deployable with the one-click Publish button) or a full SSR backend with `@supabase/ssr` and middleware-based session handling (works in Preview, deployed by the user to a Node-capable host since Publish only serves static output)
+
+Nothing about this is mandatory — projects without a connected Supabase database continue to work with mock data exactly as before.
+
+---
+
 ## Technical Stack
 
 ### Browser-Side
@@ -165,7 +178,8 @@ ForgeLab remembers persistent facts about each user across sessions:
 ### Backend
 - **PHP** — Authentication, database, session management
 - **Node.js** — SSE streaming endpoint, preflight validation
-- **Supabase** — Conversation storage, Brain Memory, user data
+- **Supabase (ForgeLab's own)** — Conversation storage, Brain Memory, user data
+- **Supabase (per-project, optional)** — Real auth/database/RLS provisioned into the user's own connected Supabase project, for their generated app
 - **Cloudflare Pages** — One-click project deployment
 
 ---
@@ -174,6 +188,8 @@ ForgeLab remembers persistent facts about each user across sessions:
 
 - **BYOK (Bring Your Own Key)** — Users can use their own OpenRouter API key
 - **Session-based authentication** — PHP sessions with Supabase integration
+- **Two-Factor Authentication** — Optional TOTP (authenticator app) or emailed code, with one-time backup codes
 - **API key encryption** — AES-256-CBC, keys stored encrypted at rest, never logged
+- **Chat history & project encryption** — Conversation history and generated project files are encrypted at rest with the same AES-256 protection as API keys
 - **Project storage** — Generated files are saved per-user and accessible only from their account
 - **Internal API protection** — Brain preflight endpoint restricted to localhost only (nginx + shared secret)

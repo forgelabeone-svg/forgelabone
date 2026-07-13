@@ -1,6 +1,36 @@
 # 📝 Changelog
 
-## v8.3 (Current) — June 2026
+## Open Beta (Current) — July 12, 2026
+
+After a closed beta focused on real-world feedback, ForgeLab opened to the public on July 12. Sign up and start building, no invite required.
+
+---
+
+## v8.4 — July 2026
+
+### New Features
+- 🛡️ **Two-Factor Authentication** — Secure your account with an authenticator app (TOTP) or an emailed code, off by default, with one-time backup codes
+- 🐙 **GitHub Integration** — Import a public or private repo straight into your workspace, or push your current project to GitHub as a real commit
+- 🗄️ **Backend & Database (Supabase)** — Connect your own Supabase project; ForgeLab detects the data model your app needs and provisions the tables with one click, with row-level security enabled automatically
+- 🔌 **Generated Apps Use Your Real Database** — Once connected, React, Vue, Svelte, and Next.js projects write real database calls and use real Supabase Auth instead of mock data
+- 🔀 **Next.js: Static Export or Full Backend** — Choose between a static export (client-side auth, deployable with one click) or a full SSR backend (server-side sessions via middleware, works in Preview, deploy it yourself to a Node-capable host)
+- 📊 **Usage Tab in Settings** — Pro plan users can see a detailed breakdown of their last 30 AI requests: model, tokens, and Forge Token cost
+- 🔒 **Chat History and Projects Encrypted at Rest** — Conversation history and generated project files now get the same AES-256 protection as API keys
+
+### Improvements
+- ⏱️ Session expiry warning, with a one-click way to stay logged in
+- 🔌 Resuming a paused Brain project after a balance top-up now correctly offers to continue where it left off
+- 📤 Upload progress bar for larger ZIP/folder/GitHub imports
+- 📋 Clearer plan preview before Brain Mode starts building: plain-language summary of how your request was understood, plus any assumptions it had to make
+- 📤 Upload Files / Upload Folder / Import ZIP merged into one menu button, matching the Export and GitHub menus
+- 🌐 Moved to the permanent domain, forgelab.one (old links redirect automatically)
+
+### Bug Fixes
+- Claude Fable 5 back online in the model picker
+
+---
+
+## v8.3 — June 2026
 
 ### New Features
 - 🖥️ **Local Model Support** — Connect your own Ollama instance as the AI backend (BYOK users)
