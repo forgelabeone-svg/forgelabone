@@ -12,7 +12,13 @@ A: There are three tiers:
 - **BYOK** — $7.99/month platform fee (7-day free trial), bring your own OpenRouter API key. Full access to all features.
 
 **Q: What tech stacks are supported?**  
-A: React, Next.js, Vue, Svelte, Node.js/Express, Python/FastAPI, static HTML/CSS/JS, and more.
+A: React, Next.js, Vue, Svelte, Node.js/Express, Python/FastAPI, PHP, static HTML/CSS/JS, and more.
+
+**Q: Can I connect a real backend and database?**  
+A: Yes. Connect your own Supabase project, and ForgeLab detects the data model your app needs and provisions the tables for you, with row-level security enabled automatically. Once connected, React, Vue, Svelte, and Next.js projects write real database calls and use real Supabase Auth instead of mock data. Nothing changes if you don't connect a database, projects still work fine with mock data.
+
+**Q: For Next.js, what's the difference between static export and full backend mode?**  
+A: Static export keeps auth on the client side and stays deployable with ForgeLab's one-click Publish button. Full backend mode adds real server-side session handling via middleware, works completely in Preview, but needs to be deployed yourself to a Node-capable host (e.g. Vercel), since Publish only supports static output.
 
 ## Brain Mode
 
@@ -39,13 +45,16 @@ A: Currently ~85-90% of issues are fixed automatically. For the remaining edge c
 ## Privacy & Security
 
 **Q: Is my code stored?**  
-A: Yes — your generated projects are saved to your account and accessible from your conversation history. Only you can see your projects. Deployed projects are hosted on Cloudflare Pages under a public URL you control.
+A: Yes — your generated projects are saved to your account and accessible from your conversation history. Only you can see your projects. Conversation history and project files are encrypted at rest (AES-256). Deployed projects are hosted on Cloudflare Pages under a public URL you control.
 
 **Q: Can I use my own API key?**  
 A: Yes! Add your OpenRouter API key in Settings. You'll only pay OpenRouter's usage pricing, plus the $7.99/month BYOK platform fee (7-day free trial included).
 
 **Q: How is my API key stored?**  
 A: Your API key is encrypted with AES-256-CBC before being stored. It is never logged or transmitted in plain text.
+
+**Q: Can I add extra account security?**  
+A: Yes — two-factor authentication (TOTP via an authenticator app, or an emailed code) is available in Settings → Account, off by default, with one-time backup codes in case you lose access.
 
 ## Technical
 

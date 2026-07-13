@@ -53,6 +53,16 @@ Templates give the AI a head start with the right tech stack. Pick one that matc
 - **Choose a strong model** — In Brain Mode, the Senior Dev agent benefits most from a capable model (Claude Sonnet or equivalent). Cheaper models may produce incomplete code.
 - **Bring your own key** — BYOK mode ($7.99/mo, 7-day free trial) lets you use your own OpenRouter API key at cost price. Or go Pro and purchase ForgeLab tokens with no monthly commitment.
 
+## 🗄️ Connecting a Real Backend
+
+By default, generated projects use mock data, no setup needed. If your app needs real auth, a real database, or both:
+
+1. Connect your own Supabase project in the workspace
+2. ForgeLab detects the data model your app needs and provisions the tables with one click, with row-level security enabled automatically
+3. React, Vue, Svelte, and Next.js projects switch from mock data to real Supabase Auth and real database calls
+
+For Next.js specifically, you'll be asked to choose between a **static export** (client-side auth, stays deployable with the one-click Publish button) or a **full backend** (server-side sessions via middleware, works in Preview, but you deploy it yourself to a Node-capable host since Publish only serves static output).
+
 ## 🛡️ Audit Loop — Standalone Feature
 
 The Audit Loop is not just part of Brain Mode — it's an independent feature you can run on any project, including existing ones.
