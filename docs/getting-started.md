@@ -13,14 +13,14 @@ Talk directly to one AI agent. Best for:
 - Learning and explanations
 - Simple single-file projects
 
-### 🧠 Brain Mode (Recommended)
+### 🧠 Brain Mode (Recommended, Pro/BYOK)
 A full team of 5 AI agents works together:
 1. **Conductor** manages the workflow
 2. **Architect** plans the project structure
 3. **Senior Developers** write the code in parallel
 4. **Bug Hunters** find and fix every error automatically
 
-Best for any real project with multiple files.
+Best for any real project with multiple files. Brain Mode (and Fix My Project, which runs on the same engine) requires a Pro or BYOK plan, it's the most token-hungry feature on the platform. Single Chat has full access to every AI model on every plan, including Free.
 
 ## Quick Start
 
@@ -51,6 +51,7 @@ Templates give the AI a head start with the right tech stack. Pick one that matc
 - **Use templates** — They save time and reduce errors
 - **Let the Audit Loop work** — If the preview shows an error, wait. The system fixes itself automatically.
 - **Choose a strong model** — In Brain Mode, the Senior Dev agent benefits most from a capable model (Claude Sonnet or equivalent). Cheaper models may produce incomplete code.
+- **Free plan works too:** 400,000 tokens every month, automatically, no credit card required, with full access to every AI model in Single Chat. Brain Mode and Fix My Project need Pro or BYOK.
 - **Bring your own key** — BYOK mode ($7.99/mo, 7-day free trial) lets you use your own OpenRouter API key at cost price. Or go Pro and purchase ForgeLab tokens with no monthly commitment.
 
 ## 🗄️ Connecting a Real Backend
