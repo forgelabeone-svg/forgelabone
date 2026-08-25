@@ -1,5 +1,22 @@
 # 📝 Changelog
 
+## v8.5: August 2026
+
+### New Features
+- 🆓 **Free Model Category:** the model picker now groups zero-cost models under their own "Free" section, alongside Coding, Voice, and Image Generation
+- 🕵️ **Ox Alpha:** added a free anonymous stealth preview model from OpenRouter, strong early results on coding benchmarks, worth trying for programming tasks
+
+### Model Updates
+- Grok 4.6 replaces Grok 4.5
+- GLM 5.3 replaces GLM 5.2
+- DeepSeek V4 Pro (0813) replaces the previous DeepSeek V4 Pro build
+- Added Gemini 3.7 Flash
+- Nano Banana 2 (Gemini 3.1 Flash Image) replaces the previous image generation model
+- Grok Imagine Image 2.0 replaces the previous Grok Imagine build
+- Retired GPT-4.1 and GPT-5.3 Codex from the model picker (older model IDs are kept internally only so existing saved personas and cached sessions referencing them don't break)
+
+---
+
 ## Open Beta (Current) — July 12, 2026
 
 After a closed beta focused on real-world feedback, ForgeLab opened to the public on July 12. Sign up and start building, no invite required.

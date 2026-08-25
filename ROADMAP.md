@@ -15,6 +15,7 @@
 
 ## Q3 2026 — Planned
 
+- [ ] **Post-Beta Free Tier** *(launching August 31, 2026):* Free plan gets 400,000 tokens/month, automatically, with full access to every AI model in Single Chat plus deployment and Brain Knowledge. Brain Mode and Fix My Project become Pro/BYOK-only, they're the most token-hungry features on the platform, this keeps the free tier itself generous and sustainable long-term.
 - [ ] **Audit Loop Silent Mode** — Hide fix details, show progress card
 - [ ] **Differential Re-Audit** — Only re-check changed files (token cost -50%)
 - [ ] **Smart Model Routing** — Auto-select cheapest capable model per task

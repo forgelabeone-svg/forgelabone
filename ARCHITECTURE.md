@@ -171,7 +171,7 @@ Nothing about this is mandatory — projects without a connected Supabase databa
 - **xterm.js** — Multi-tab terminal emulator
 
 ### AI Integration
-- **OpenRouter** — Unified API for 15+ AI models
+- **OpenRouter** — Unified API for 19+ AI models
 - **Streaming (SSE)** — Real-time code generation via Server-Sent Events
 - **Local Model Support** — Optional Ollama backend (BYOK users)
 
